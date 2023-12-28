@@ -1,5 +1,6 @@
 import './App.css';
 import { Route, Routes, useNavigate } from 'react-router-dom';
+import PasswordAccess from './containers/PasswordAccess/PasswordAccess';
 
 const App = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ const App = () => {
       </div>
       <div>
         <Routes>
-          <Route path={'/'} element={''} />
+          <Route path={'/'} element={<PasswordAccess />} />
           <Route path={'/calculator'} element={''} />
           <Route
             path={'*'}
